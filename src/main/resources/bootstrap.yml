@@ -1,0 +1,14 @@
+server:
+  port: 8761
+eureka:
+  client:
+    serviceUrl:
+      #defaultZone: http://192.168.99.101:8761/eureka
+      defaultZone: http://localhost:8761/eureka
+spring:
+  application:
+    name: eureka
+  cloud:
+    config:
+      #uri: ${CONFIG_SERVER_URL:http://192.168.99.101:8888}
+      uri: ${CONFIG_SERVER_URL:http://localhost:8888}
